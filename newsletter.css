@@ -1,0 +1,133 @@
+* {
+    box-sizing: border-box;
+}
+
+h2, form {
+    padding: 20px;
+    margin: 0 auto;
+}
+
+body {
+    margin: 0 auto;
+}
+
+b {
+    margin: 0 auto;
+    padding-left: 100%;
+    height: 50px;
+}
+
+li {
+    font-size: large;
+}
+
+footer {
+    text-align: center;
+    padding: 3%;
+    background-color: gainsboro;
+    border: 50px;
+    margin: 0px;
+    font-size: medium; /*padrao*/
+}
+
+.header { /*bloco pai*/
+    display: flex;
+    justify-content: center; /*alinhamento vertical do item*/
+    text-align: center;
+    align-items: center;
+    height: 200px;
+    background: gainsboro;
+}
+
+.header img {
+    display: flex;
+    height: 140px;
+    width: 140px;
+}
+
+.header div {
+    padding: 20px; /*preenchimento do elemento*/
+}
+
+.article p {
+    text-align: justify;
+    padding: 20px;
+    font-size: large;
+}
+
+.email {
+    padding: 30px 20px;
+    padding-top: 0px;
+    font-size: large;
+}
+
+.link {
+    text-decoration: none;
+    display: flex;
+    font-size: large;
+    justify-content: space-around;
+}
+
+.link a {
+    padding: 20px;
+    display: flex;
+    text-decoration: none;
+}
+
+.report {
+    display: flex;
+}
+
+.report div {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.report img {
+    display: flex;
+    width: 250px;
+    height: 250px;
+
+}
+
+.report figcaption {
+    text-align: center;
+    padding: 10px;
+}
+
+#chamada {
+    color: blue;
+    padding: 30px 20px; /*padding e padding-left*/
+    padding-top: 50px; /*padding superior*/
+}
+/*estilo barra de navegacao superior*/
+.navbar {
+    overflow: hidden; /*estouro oculto*/
+    background-color: grey; /*cor de fundo*/
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
+/*estilo links de navegacao superior*/
+.navbar a {/*estilizacao do elemento <a>*/
+    color: white;
+    float: left; /*flutuar a esquerda*/
+    display: flex; /*exibicao em bloco*/
+    text-align: center; /*alinhamento de texto ao centro*/
+    padding: 14px 30px; /*altura do padding 10px e espacamento do padding 67px*/
+    text-decoration: none; /*decoracao de texto nenhum*/
+    font-size: large;
+    /* border: 1px solid red; */
+}
+/*mudar a cor ao passar o mouse*/
+.navbar a:hover { /*hover: pairar*/
+    background-color: #ddd;
+    color: black;
+}
+
+@media screen and (max-width:800px) {
+    .navbar, .report {
+        flex-direction: column;
+    }
+}
