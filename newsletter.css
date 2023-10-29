@@ -55,6 +55,10 @@ footer {
     font-size: large;
 }
 
+.report p {
+    text-align: justify;
+}
+
 .email {
     padding: 30px 20px;
     padding-top: 0px;
@@ -80,21 +84,23 @@ footer {
 
 .report div {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    align-items: center;
     padding: 20px;
+    /* border: 1px solid red; */
 }
 
 .report img {
     display: flex;
     width: 250px;
     height: 250px;
-
 }
 
-.report figcaption {
+/* .report figcaption {
     text-align: center;
+    align-items: start;
     padding: 10px;
-}
+} */
 
 #chamada {
     color: blue;
@@ -127,7 +133,12 @@ footer {
 }
 
 @media screen and (max-width:800px) {
-    .navbar, .report {
+    .report {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar {
         flex-direction: column;
     }
 }
