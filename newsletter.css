@@ -39,29 +39,19 @@ footer {
     background: gainsboro;
 }
 
+.header div {
+    padding: 20px; /*preenchimento do elemento*/
+}
+
 .header img {
     display: flex;
     height: 140px;
     width: 140px;
 }
 
-.header div {
-    padding: 20px; /*preenchimento do elemento*/
-}
-
 .article p {
     text-align: justify;
     padding: 20px;
-    font-size: large;
-}
-
-.report p {
-    text-align: justify;
-}
-
-.email {
-    padding: 30px 20px;
-    padding-top: 0px;
     font-size: large;
 }
 
@@ -73,13 +63,42 @@ footer {
 }
 
 .link a {
-    padding: 20px;
     display: flex;
+    padding: 20px;
     text-decoration: none;
+}
+
+.link img {
+    height: 40px;
+    width: 40px;
+}
+
+.line {
+    display: flex;
+}
+
+.line div {
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+}
+
+.line p {
+    text-align: justify;
+}
+
+.line img {
+    display: flex;
+    width: 250px;
+    height: 250px;
 }
 
 .report {
     display: flex;
+}
+
+.report p {
+    text-align: justify;
 }
 
 .report div {
@@ -87,7 +106,6 @@ footer {
     flex-direction: row;
     align-items: center;
     padding: 20px;
-    /* border: 1px solid red; */
 }
 
 .report img {
@@ -96,11 +114,11 @@ footer {
     height: 250px;
 }
 
-/* .report figcaption {
-    text-align: center;
-    align-items: start;
-    padding: 10px;
-} */
+.email {
+    padding: 30px 20px;
+    padding-top: 0px;
+    font-size: large;
+}
 
 #chamada {
     color: blue;
@@ -133,6 +151,7 @@ footer {
 }
 
 @media screen and (max-width:800px) {
+    .line,
     .report {
         flex-direction: column;
         align-items: center;
@@ -141,4 +160,5 @@ footer {
     .navbar {
         flex-direction: column;
     }
+
 }
